@@ -16,10 +16,10 @@ do
         for python_version in "${python_version_aliases[@]}"
         do
             if [[ ${python_version} != latest ]]; then
-                tags_args+=(-t "intezer/python-cassandra-driver:$python_version-$driver_version")
+                tags_args+=(-t "benbk/python-cassandra-driver:$python_version-$driver_version")
             fi
             if [[ ${driver_versions[0]} == ${driver_version} ]]; then
-                tags_args+=(-t "intezer/python-cassandra-driver:$python_version")
+                tags_args+=(-t "benbk/python-cassandra-driver:$python_version")
             fi
         done
         docker build --pull --build-arg python_version="${python_version}" --build-arg driver_version="$driver_version" "${tags_args[@]}" .
