@@ -34,3 +34,9 @@ python tag has an equivalent same tag. If you are using the latest version, all 
 1. The image is installing `libev` to enable `libev` event loop. For further information please refer to the appropriate
 [section](http://datastax.github.io/python-driver/installation.html#libev-support) in the driver's documentation.
 2. Issues can be filed in the [github repository](https://github.com/intezer/python-cassandra-driver).
+
+# Use dockerfile without create-images
+
+```shel script
+docker build --pull --build-arg python_version="2.7.16-slim" -t bbk/spk-python:"2.7.16-slim" .
+```
