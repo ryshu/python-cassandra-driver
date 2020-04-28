@@ -38,5 +38,5 @@ python tag has an equivalent same tag. If you are using the latest version, all 
 # Use dockerfile without create-images
 
 ```shel script
-docker build --pull --build-arg python_version="2.7.16-slim" -t bbk/spk-python:"2.7.16-slim" .
+docker build --pull --build-arg python_version="2.7.16-slim" -t benbk/spk-python:"2.7.16-slim" .
 ```
