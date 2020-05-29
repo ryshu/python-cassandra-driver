@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y curl apt-transport-https gnupg2 jq \
     && rm -rf /var/lib/apt/lists/*
 
 # Preinstall pip libs to use cassandra, kafka, mongo and sql (spikeelabs default libs)
-RUN pip install cassandra-driver==3.23.0 confluent-kafka==1.4.1  pymongo==3.10.1 pyodbc==4.0.30
+RUN pip install cassandra-driver==3.23.0 confluent-kafka==1.4.1 pyodbc==4.0.30
 
 # Install poetry (using install recommended way) and setup poetry path
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
