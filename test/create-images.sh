@@ -9,6 +9,6 @@ docker login
 
 for python_version in "${python_versions[@]}"
 do
-    docker build --pull --build-arg python_version="${python_version}" -t "benbk/spk-python:$python_version-test" .
-    docker push "benbk/spk-python:$python_version-test"
+    docker build --pull --build-arg python_version="${python_version}" -t "spklabs/spk-python:$python_version-test" .
+    docker push "spklabs/spk-python:$python_version-test"
 done
